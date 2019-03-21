@@ -15,7 +15,7 @@
 
     <body>
         <div class="container">
-            <div class="row">
+<div class="row d-flex justify-content-center">
                 <div id="main-content" class="col-offset-1 col-10">
                     <div class="col-12 text-center">
                         <h1 class="display-4" id="title">NBA Trivia</h1>
@@ -35,10 +35,16 @@
                         <button class="btn btn-primary" id="submit-button" type="submit">Submit</button>
                     </div>
 
-                    <!--Results-->
+                    <!--Question Results-->
                     <div id="result-div" class="col-12 text-center">
                         <h3 id="result-text"></h3>
                         <button class="btn btn-primary gray-button" id="next-button">Next</button>
+                    </div>
+
+                    <!--Game-End Results-->
+                    <div id="final-div" class="col-12 text-center">
+                        <h1 id="final-text"></h1>
+                        <button class="btn btn-primary blue-button" id="replay-button">Try Again!</button>
                     </div>
                 </div>
             </div>

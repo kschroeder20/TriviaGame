@@ -8,7 +8,6 @@ html{
     margin-top: 30px;
     min-height: 500px;
 }
-
 .choice,
 #submit-button{
     width: 50%;
@@ -24,9 +23,8 @@ html{
     background: #6D757D;
 }
 
-#options-div{
-    display: none;
-}
-#result-div {
+#options-div,
+#result-div,
+#final-div {
     display: none;
 }
