@@ -14,25 +14,60 @@ var questions = [{
     option4: "Latin",
     answer: "1"
 }, {
-    question: "What is my favorite color?",
-    option1: "red",
-    option2: "blue",
-    option3: "yellow",
-    option4: "orange",
+    question: "Who has the most NBA career three pointers?",
+    option1: "Steph Curry",
+    option2: "James Harden",
+    option3: "Kobe Bryant",
+    option4: "Patrick Ewing",
+    answer: "4"
+}, {
+    question: "Who has the most Shaqtin' a Fool MVP's?",
+    option1: "JaVale McGee",
+    option2: "LeBron James",
+    option3: "Lonzo Ball",
+    option4: "Nick Young",
     answer: "1"
 }, {
-    question: "What is my favorite hobby?",
-    option1: "chess",
-    option2: "TV",
-    option3: "fitness",
-    option4: "analysis",
+    question: "Within how many years of retirement are most NBA players broke?",
+    option1: "8",
+    option2: "2",
+    option3: "10",
+    option4: "5",
+    answer: "4"
+}, {
+    question: "Where did Ron Artest apply to during his rookie season with the Bulls in order to get an employee discount?",
+    option1: "Burger King",
+    option2: "Publix",
+    option3: "Circut City",
+    option4: "Apple",
     answer: "3"
 }, {
-    question: "Who is my favorite rapper?",
-    option1: "Migos",
-    option2: "Lil Xan",
-    option3: "Hopsin",
-    option4: "Kanye",
+    question: "Who averaged a record 5.6 blocks per game in one season?",
+    option1: "Mark Eaton",
+    option2: "Hakeem Olajuwon",
+    option3: "Dikembe Mutombo",
+    option4: "Alonzo Mourning",
+    answer: "1"
+}, {
+    question: "What NBA great owns 10% of all 'Five Guys Burgers' restaurants in the US?",
+    option1: "Steve Nash",
+    option2: "Shaquille O'Neal",
+    option3: "Michael Jordan",
+    option4: "Magin Johnson",
+    answer: "2"
+}, {
+    question: "Who has missed the most Career field goals in NBA history?",
+    option1: "LeBron James",
+    option2: "Ray Allen",
+    option3: "Wilt Chamberland",
+    option4: "Kobe Bryant",
+    answer: "4"
+}, {
+    question: "What NBA player said 'I'm the only player in the NBA who makes less money than his father'?",
+    option1: "Austin Rivers",
+    option2: "Steph Curry",
+    option3: "Bill Laimbeer",
+    option4: "Kevin Love",
     answer: "4"
 }]
 
@@ -53,6 +88,7 @@ var newQuestion = function (number) {
     $("#options-div").css('display', 'block');
     $("#result-div").css('display', 'none');
     $("#start-game").css('display', 'none');
+    $("#correct-gif").css('display', 'none');
     $("#question").text(questions[questionNumber].question).removeClass('blue-button');
     $("#option1").text(questions[questionNumber].option1).removeClass('blue-button');
     $("#option2").text(questions[questionNumber].option2).removeClass('blue-button');
@@ -91,6 +127,7 @@ $("#submit-button").on('click', function () {
     //Show result
     $("#result-div").css('display', 'block');
     if (game.finalChoice === questions[game.questionsAnsweredCount].answer) {
+         $("#correct-gif").css('display', 'block');
         $('#result-text').text("You are correct!")
         game.correctAnswerCounter = game.correctAnswerCounter + 1;
     } else {
@@ -107,9 +144,10 @@ $('#next-button').on('click', function () {
         //Hide options and question results
         $("#options-div").css('display', 'none');
         $("#result-div").css('display', 'none');
+        $("#correct-gif").css('display', 'none');
         //Show final result
         $("#final-div").css('display', 'block');
-        $("#final-div").text("Game over! You got "+ game.correctAnswerCounter + " out of 5 questions correct.")
+        $("#final-div").text("Game over! You got "+ game.correctAnswerCounter + " out of 10 questions correct.")
     } else {
         newQuestion(game.questionsAnsweredCount);
     }

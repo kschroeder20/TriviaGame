@@ -11,11 +11,12 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+
     </head>
 
     <body>
         <div class="container">
-<div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
                 <div id="main-content" class="col-offset-1 col-10">
                     <div class="col-12 text-center">
                         <h1 class="display-4" id="title">NBA Trivia</h1>
@@ -38,8 +39,14 @@
                     <!--Question Results-->
                     <div id="result-div" class="col-12 text-center">
                         <h3 id="result-text"></h3>
+                        <div id="correct-gif" class="col-12 text-center">
+                            <iframe src="https://giphy.com/embed/l0ErA4yJWrKFX8li0" frameBorder="0" class="giphy-embed"
+                                allowFullScreen></iframe>
+                            <p><a href="https://giphy.com/gifs/nba-dance-dancing-l0ErA4yJWrKFX8li0">via GIPHY</a></p>
+                        </div>
                         <button class="btn btn-primary gray-button" id="next-button">Next</button>
                     </div>
+
 
                     <!--Game-End Results-->
                     <div id="final-div" class="col-12 text-center">

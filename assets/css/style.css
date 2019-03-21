@@ -25,6 +25,9 @@ html{
 
 #options-div,
 #result-div,
-#final-div {
+#final-div,
+#correct-gif {
     display: none;
 }
+
+
