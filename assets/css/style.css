@@ -1,0 +1,32 @@
+body,
+html{
+    background: #EAEDED;
+}
+
+#main-content{
+    background: #ffffff;
+    margin-top: 30px;
+    min-height: 500px;
+}
+
+.choice,
+#submit-button{
+    width: 50%;
+    height: 50px;
+    margin: 5px 0 5px 0;
+}
+.choice:hover,
+.blue-button{
+    background: #027BFF;
+}
+
+.gray-button{
+    background: #6D757D;
+}
+
+#options-div{
+    display: none;
+}
+#result-div {
+    display: none;
+}

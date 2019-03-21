@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trivia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="main-content" class="col-offset-1 col-10">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4" id="title">NBA Trivia</h1>
+                    </div>
+                    <hr>
+                    <!--Start Game Button-->
+                    <div class="col-12 text-center">
+                        <button type="button" id="start-game" class="btn btn-primary btn-lg">Start Game</button>
+                    </div>
+                    <!--Main Game Content-->
+                    <div id="options-div" class="col-12 text-center">
+                        <h3 id="question"></h3>
+                        <button type="button" class="btn btn-secondary btn-lg choice" id="option1" value="1"></button>
+                        <button type="button" class="btn btn-secondary btn-lg choice" id="option2" value="2"></button>
+                        <button type="button" class="btn btn-secondary btn-lg choice" id="option3" value="3"></button>
+                        <button type="button" class="btn btn-secondary btn-lg choice" id="option4" value="4"></button>
+                        <button class="btn btn-primary" id="submit-button" type="submit">Submit</button>
+                    </div>
+
+                    <!--Results-->
+                    <div id="result-div" class="col-12 text-center">
+                        <h3 id="result-text"></h3>
+                        <button class="btn btn-primary gray-button" id="next-button">Next</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+    <script src="../TriviaGame/assets/javascript/game.js"></script>
+
+</html>
