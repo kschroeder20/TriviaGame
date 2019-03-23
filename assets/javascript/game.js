@@ -193,7 +193,10 @@ function noSelect() {
     //Hide options
     $("#options-div").css('display', 'none');
     //Show result
+    $("#result-div").css('display', 'block');
+    //Set current page to results page
     game.currentPage = 1;
+    //Show Results
     $("#result-gif").css('display', 'block');
     //Remove any existing Gif from last question
     $("#result-gif").html("");
@@ -245,7 +248,7 @@ function count() {
         newQuestion(game.questionsAnsweredCount);
     }
     //If time runs out, the user is on a quiz page, and there are more questions, generate a new question
-    else if (game.time === 0 && game.currentPage === 0 && game.questionsAnsweredCount < questions.length) {
+    else if (game.time === 0 && game.currentPage === 0) {
         stop();
         noSelect();
 
