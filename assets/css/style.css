@@ -1,6 +1,7 @@
 body,
 html{
-    background: #EAEDED;
+    background: url('../images/istockphoto-940062208-612x612.jpg');
+    background-size: cover;
     font-family: 'Source Sans Pro',
     sans-serif;
 }
@@ -35,16 +36,6 @@ html{
 #replay-button{
     margin-top: 20px;
 }
-
-@media (max-width: 992px) {
-    
-
-}
-
-@media (max-width: 768px) {
-    
-}
-
 
 @media (max-width: 576px) {
 .choice,

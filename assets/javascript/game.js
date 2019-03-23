@@ -37,7 +37,7 @@ var questions = [{
     option4: "Nick Young",
     answer: "1",
     correctAnswer: "Javale McGee",
-    correctGif: '<<iframe src="https://giphy.com/embed/1BGBv47q2xqEFNRH6p" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+    correctGif: '<iframe src="https://giphy.com/embed/1BGBv47q2xqEFNRH6p" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
     incorrectGif: '<<iframe src="https://giphy.com/embed/eG7KXuFaVrnVu" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'
 }, {
     question: "Within how many years of retirement are most NBA players broke?",
@@ -47,7 +47,7 @@ var questions = [{
     option4: "5",
     answer: "4",
     correctAnswer: "5 years",
-    correctGif: '<<iframe src="https://giphy.com/embed/2wV6SspOmNSuo8wG5L" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+    correctGif: '<iframe src="https://giphy.com/embed/2wV6SspOmNSuo8wG5L" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
     incorrectGif: '<iframe src="https://giphy.com/embed/5gWGDxXSFcCoSWFQ2g" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'
 }, {
     question: "Where did Ron Artest apply to during his rookie season with the Bulls in order to get an employee discount?",
@@ -57,7 +57,7 @@ var questions = [{
     option4: "Apple",
     answer: "3",
     correctAnswer: "Circut City",
-    correctGif: '<<iframe src="https://giphy.com/embed/8gsE6LF92vJiE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+    correctGif: '<iframe src="https://giphy.com/embed/8gsE6LF92vJiE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
     incorrectGif: '<iframe src="https://giphy.com/embed/yEZMznoPiKhgc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'
 }, {
     question: "Who averaged a record 5.6 blocks per game in one season?",
@@ -214,7 +214,7 @@ function startThirty() {
     game.timerRunning = true;
     //Clear anything from last question
     clearInterval(game.intervalId);
-    game.intervalId = setInterval(count, 10);
+    game.intervalId = setInterval(count, 1000);
 }
 
 function startTen() {
@@ -222,7 +222,7 @@ function startTen() {
     game.timerRunning = true;
     //Clear anything from last question
     clearInterval(game.intervalId);
-    game.intervalId = setInterval(count, 10);
+    game.intervalId = setInterval(count, 1000);
 }
 
 function stop() {
