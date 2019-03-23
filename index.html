@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
         <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
 
@@ -34,7 +36,6 @@
                         <button type="button" class="btn btn-secondary btn-lg choice" id="option2" value="2"></button>
                         <button type="button" class="btn btn-secondary btn-lg choice" id="option3" value="3"></button>
                         <button type="button" class="btn btn-secondary btn-lg choice" id="option4" value="4"></button>
-                        <button class="btn btn-primary" id="submit-button" type="submit">Submit</button>
                     </div>
 
                     <!--Question Results-->
@@ -42,14 +43,15 @@
                         <h3 id="result-text"></h3>
                         <div id="result-gif" class="col-12 text-center">
                         </div>
-                        <button class="btn btn-primary gray-button" id="next-button">Next</button>
                     </div>
 
 
                     <!--Game-End Results-->
                     <div id="final-div" class="col-12 text-center">
                         <h1 id="final-text"></h1>
-                        <button class="btn btn-primary blue-button" id="replay-button">Try Again!</button>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="button" id="replay-button" class="btn btn-primary btn-md">Replay</button>
                     </div>
                 </div>
             </div>

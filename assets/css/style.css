@@ -1,6 +1,8 @@
 body,
 html{
     background: #EAEDED;
+    font-family: 'Source Sans Pro',
+    sans-serif;
 }
 
 #main-content{
@@ -8,8 +10,7 @@ html{
     margin-top: 30px;
     min-height: 500px;
 }
-.choice,
-#submit-button{
+.choice{
     width: 50%;
     height: 50px;
     margin: 5px 0 5px 0;
@@ -26,8 +27,30 @@ html{
 #options-div,
 #result-div,
 #final-div,
-#result-gif {
+#result-gif,
+#replay-button {
     display: none;
 }
 
+#replay-button{
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 576px) {
+.choice,
+#question {
+    font-size: 100%;
+}
+
+}
 
